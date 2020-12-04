@@ -2,5 +2,5 @@
 
 def call(name) {
     echo "I'm running on node ${env.NODE_NAME}"
-    command(script: "sleep 60", label: "Hello ${name},I'm sleeping for a minute now")
+    sh(script: "sleep 60", label: "Hello ${name},I'm sleeping for a minute now")
 }
