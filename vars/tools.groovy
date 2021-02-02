@@ -1,6 +1,8 @@
 class tools {
     static def hello() {
-        sh "Sleep 10"
-        echo "I RAN SUCCESSFULLY"
+        def sh = {sh "sleep 10"}
+        sh.call()
+        def echo = {echo "I RAN"}
+        echo.call()
     }
 }
