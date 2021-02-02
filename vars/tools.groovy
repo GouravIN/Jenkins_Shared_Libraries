@@ -1,5 +1,5 @@
 class tools {
-    def hello() {
+    static def hello() {
         println("Hello World!")
     }
 }
