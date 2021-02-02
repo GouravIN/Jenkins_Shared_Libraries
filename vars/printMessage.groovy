@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
 import tools
+t = new tools()
 def call(name) {
-    tools.echo_command(name)
+    t.echo_command(name)
 }
