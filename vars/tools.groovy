@@ -1,5 +1,5 @@
 class tools {
-    def echo_command(arg) {
+    def printHello(arg) {
         echo "${arg}"
     }
 }
