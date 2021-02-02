@@ -1,5 +1,6 @@
 class tools {
     static def hello() {
-        println("Hello World!")
+        sh "Sleep 10"
+        echo "I RAN SUCCESSFULLY"
     }
 }
