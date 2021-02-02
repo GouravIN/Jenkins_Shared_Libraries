@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
-def call(Map args = [:]) {
-    def script = args.script
-    def label = args.label
+def call(Map args = [:], String script) {
+    script = "${args.sudo ? 'sudo ' : ''}${script}"
+    def label = args.label ?: script
     sh label: label, script: script
 }
