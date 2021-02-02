@@ -1,3 +1,3 @@
 def greet() {
-    println "Hello World!"
+    echo "Hello World!"
 }
